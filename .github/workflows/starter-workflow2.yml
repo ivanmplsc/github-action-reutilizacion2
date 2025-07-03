@@ -1,0 +1,13 @@
+# This is a basic workflow to help you get started with Actions
+
+name: My starter Workflow2
+
+on:
+  workflow_dispatch:
+
+jobs:
+  call-workflow-using-main:
+    uses: ivanmplsc/github-action-reutilizacion/.github/workflows/reusable-workflow2.yml@main
+  call-workflow-using-branch:
+    uses: ivanmplsc/github-action-reutilizacion/.github/workflows/reusable-workflow2.yml@2025_01
+
